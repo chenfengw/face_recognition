@@ -1,0 +1,18 @@
+self trained model. 3b
+python lfw_eval.py --model /datasets/home/80/080/chw357/cse252d/cse252d-sp21-hw2/sphereFace/checkpoint1/netFinal_8.pth --net faceNet --lfw /datasets/cs252-sp21-A00-public/hw2_data/lfw/
+
+self train with batch norm
+python lfw_eval.py --model /datasets/home/80/080/chw357/cse252d/cse252d-sp21-hw2/sphereFace/checkpoint/netFinal_8.pth --net faceNet --lfw /datasets/cs252-sp21-A00-public/hw2_data/lfw/
+
+pre trained model
+python lfw_eval.py --model ./model/sphere20a_20171020.pth --net faceNet --lfw /datasets/cs252-sp21-A00-public/hw2_data/lfw/
+
+train on casia
+python casia_train.py
+
+eval cos face, net_4: LFWACC=0.9690 std=0.0098 thd=0.2355
+/datasets/home/80/080/chw357/cse252d/cse252d-sp21-hw2/cosFace/checkpoint
+python lfw_eval.py --model /datasets/home/80/080/chw357/cse252d/cse252d-sp21-hw2/cosFace/checkpoint/net_4.pth --net faceNet --lfw /datasets/cs252-sp21-A00-public/hw2_data/lfw/
+
+net_6: LFWACC=0.9882 std=0.0048 thd=0.2060
+net_Final_8: LFWACC=0.9872 std=0.0053 thd=0.2050
