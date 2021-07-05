@@ -3,12 +3,12 @@ This is a PyTorch implementation of [SphereFace](https://arxiv.org/abs/1704.0806
 
 ## Loss Functions
 ### SphereFace
-SphereFace use the following loss functions
+SphereFace use the following loss function
 ![](images/sphere_face_loss.png)
 ![](images/sphere_face_phi.png)
 
 ### CosFace
-CosFace use the following loss functions
+CosFace use the following loss function
 ![](images/cos_face_loss.png)
 ![](images/cos_face_phi.png)
 
@@ -21,6 +21,7 @@ cd sphereFace && python casia_train.py
 ```
 ## Generate Landmark with MTCNN
 ![](images/q2-1.png)
+
 To generate facial landmarks using [MTCNN](https://github.com/TropComplique/mtcnn-pytorch), run this command:
 ```
 cd mtcnn && python lfw_landmark.py --lfw /path/to/dataset
@@ -47,6 +48,7 @@ CosFace (trained on CASIA from scratch)|0.9872
 
 ## Feature Visualization with tSNE
 Randomly choose 10 identities, multiple images per identity, from the CASIA dataset and visualize the feature representation using [tSNE](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html).
+
 ![](images/sphereFace.png)
 
 ## Reference
